@@ -1,6 +1,6 @@
 from nonebot_plugin_orm import Model
-from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import DateTime, ForeignKey, func
+from sqlalchemy.orm import Mapped, mapped_column
 
 
 class Backpack(Model):

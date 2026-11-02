@@ -7,8 +7,8 @@ from nonebot.log import logger
 from pydantic import TypeAdapter
 
 from marisa.configs import DATA_DIR
-from marisa.exception import ItemNotFoundError
 from marisa.schemas.item import Item, ItemType
+from marisa.exception import ItemNotFoundError
 
 
 class ItemManager:

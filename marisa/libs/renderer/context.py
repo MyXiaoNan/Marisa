@@ -78,12 +78,14 @@ class CombatContext:
         backpack = BackpackManager(user)
 
         dharma = backpack.filter(
-            lambda item: item.type == "dharma"
-            and bool(item.model_dump().get("is_equipped"))
+            lambda item: (
+                item.type == "dharma" and bool(item.model_dump().get("is_equipped"))
+            )
         )
         armor = backpack.filter(
-            lambda item: item.type == "armor"
-            and bool(item.model_dump().get("is_equipped"))
+            lambda item: (
+                item.type == "armor" and bool(item.model_dump().get("is_equipped"))
+            )
         )
 
         return cls(
